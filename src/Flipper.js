@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Coin from './Coin';
-import "./Flipper.css"
+import "./Flipper.css";
 
 
 const Flipper= () => {
@@ -8,14 +8,13 @@ const Flipper= () => {
     const[tails, changeTails] = useState(0);
     const [isHeads, flipCoin] =useState(null);
     function flip(){
-        const random = Math.floor(Math.random()*2+1)
-        console.log(random)
+        const random = Math.floor(Math.random()*2+1);
         if(random === 2){
             flipCoin(true);
-            changeHeads(heads+1)
+            changeHeads(heads+1);
         }else {
             flipCoin(false)
-            changeTails(tails+1)
+            changeTails(tails+1);
         }
     }
     return (
@@ -27,7 +26,7 @@ const Flipper= () => {
     <p>Heads: {heads} Tails: {tails}</p>
     <button onClick={flip}>Flip Coin</button>
     </div>
-    )
+    );
 }
 
 export default Flipper;
