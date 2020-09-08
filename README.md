@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Coin Flipper
+A simple coin-flipping app. Press the button to flip a coin and see a total of heads and tails.  Created with React
+
 ## Available Scripts
 
 In the project directory, you can run:
